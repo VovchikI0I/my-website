@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: white;
+  letter-spacing: 0.277em;
+  font-weight: 300;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(30%);
+}
+
+header {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transition: 0.1s linear; 
+ 
+
+ /* Секція з напрямками */
+.popular-destinations {
+    padding: 50px 0;
+    background-color: #f9f4ff;
+    text-align: center;
+}
+
+/* Картки: вирівнювання, відступи */
+.popular-destinations .card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.popular-destinations .card:hover {
+    transform: scale(1.03);
+}
+
+/* Заголовок */
+.popular-destinations h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* Текст на картках */
+.card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: left;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 0 0 15px 15px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.card-text {
+    font-size: 1rem;
+}
